@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #201f62;
+    --second-color: #432279;
+    --input-bg: #2d2c5b;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.card-login {
+    width: 450px;
+    height: 500px;
+    border: 3px black solid;
+    background-color: var(--primary-color);
+    grid-template-areas: "perfil" "form-user" "texto";
+    grid-template-rows: 35% 1fr 20%;
+    display: grid;
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 80px;
+}
+
+.perfil {
+    grid-area: perfil;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px rgb(52, 52, 138) solid;
+    margin-bottom: 15px;
+}
+
+.user-foto {
+    width: 80px;
+}
+
+.perfil span {
+    font-size: 35px;
+    color: rgb(108, 106, 236);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form-user {
+    grid-area: form-user;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-user span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+#email,
+#senha {
+    display: flex;
+    width: 180%;
+    height: 35px;
+    outline: none;
+    border: 2px black solid;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: var(--input-bg);
+    font-weight: bold;
+    color: rgb(122, 114, 244);
+}
+
+.btn {
+    width: 190px;
+    height: 55px;
+    background-color: rgb(33, 11, 144);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    border-radius: 15px;
+    letter-spacing: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.texto {
+    grid-area: texto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    padding: 20px;
+    color: rgb(122, 114, 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

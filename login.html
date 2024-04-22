@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TELA lOGIN</title>
+</head>
+
+<body>
+
+    <div class="card-login">
+        <div class="perfil">
+            <img src="img/icons8-user-48.png" alt="" class="user-foto">
+            <span>@username</span>
+        </div>
+
+        <div class="form-user">
+
+            <span>Bem-vindo(a) de volta!</span>
+            <form action="#.php" method="get" class="form">
+
+                <input type="text" id="email" placeholder="E-mail">
+
+                <input type="password" id="senha" placeholder="Senha">
+
+                <input type="button" class="btn" value="LOGIN" onclick="verificar()">
+            </form>
+        </div>
+
+        <div class="texto">
+            <p id="mensagem"></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
